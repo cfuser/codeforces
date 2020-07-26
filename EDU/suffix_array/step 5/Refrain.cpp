@@ -20,8 +20,8 @@ void radix_sort(vector<int> &p,vector<int> &c)
 }
 int main()
 {
-	freopen("in.txt","r",stdin);
-	freopen("out.txt","w",stdout);
+	//freopen("in.txt","r",stdin);
+	//freopen("out.txt","w",stdout);
 	string s="";
 	//cin >> s;
 	int n,m;
@@ -110,11 +110,11 @@ int main()
 			ans_pos = i;
 		}
 	}
-	ans = max(ans, (long long)n - 1);
-	cout << ans << endl;
-	/*if (ans < (long long)n - 1)
+	//ans = max(ans, (long long)n - 1);
+	//cout << ans << endl;
+	if (ans < (long long)n - 1)
 	{
-		cout << s.size() - 1 << endl << 1 <<endl;
+		cout << s.size() - 1 << endl << s.size() - 1 <<endl;
 		for (int i = 0; i < n - 1; i++) cout << s[i] + 1 - '0' << " ";cout<<endl;
 	}
 	else
@@ -122,8 +122,8 @@ int main()
 		cout << ans << endl << lcp[ans_pos] << endl;
 		//cout << ans_pos << endl;
 		for (int i = 0; i < lcp[ans_pos]; i++) cout << s[p[ans_pos] + i] + 1 - '0' << " ";cout<<endl;
-	}*/
-	fclose(stdin);fclose(stdout);
+	}
+	//fclose(stdin);fclose(stdout);
 	return 0;
 }
 
